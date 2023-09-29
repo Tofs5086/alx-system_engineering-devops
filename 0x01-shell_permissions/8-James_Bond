@@ -1,2 +1,2 @@
 #!/bin/bash
-chmod go-rwx 
+chmod go-rwx hello
