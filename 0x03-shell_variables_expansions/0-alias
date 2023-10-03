@@ -1,2 +1,2 @@
 #!/bin/bash
-alias make="mkdir"
+alias ll='ls -l'
