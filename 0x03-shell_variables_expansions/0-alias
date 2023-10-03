@@ -1,2 +1,2 @@
 #!/bin/bash
-alias update='devs go update'
+alias c="cd"
