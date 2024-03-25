@@ -28,6 +28,6 @@ The application server interacts with the database to read and write data.
 6. Domain Name Configuration:
 The domain name game.com is configured to point to the server’s IP address (in this case, 8.8.8.8).
 The www subdomain is set up as a CNAME record (Canonical Name) that points to the root domain.
-When users type www.game.com in their browsers, DNS resolution directs them to the server’s IP address, allowing them to access the website.
+When users type a website such as  www.foobar.com in their browsers, DNS resolution directs them to the server’s IP address, allowing them to access the website.
 
 Remember that this infrastructure model represents a simplified view. In practice, there may be additional components (such as load balancers, caching layers, and security measures) to enhance performance, scalability, and security.
