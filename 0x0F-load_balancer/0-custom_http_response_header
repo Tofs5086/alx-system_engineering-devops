@@ -1,0 +1,28 @@
+#!/usr/bin/env bash
+# this is configuring web-01 to have a http response
+
+#update packages
+sudo apt-get update
+sudo apt-get install -y nginx
+
+#create an index page
+echo "Hello World!" | sudo tee /var/www/html/index.html
+
+# perform a redirection
+new_string="server_name _;\n\trewrite ^\/redirect_me https:\/\/github.com\/Tofs5086 permanent;"
+
+sudo sed -i "s/server_name _;/$new_string/" /etc/nginx/sites-enabled/default
+
+# create a custom error page
+
+echo "Ceci n'est pas une page" | sudo tee /var/www/html/404.html
+
+# create custom HTTP respnse header
+
+sudo sed -i "server_name _;/a add_header X-Served-By $HOSTNAME;" /etc/nginx/sites-enabled/default
+
+# test for syntax errors
+sudo nginx -t
+
+# restart nginx
+sudo service nginx restart
