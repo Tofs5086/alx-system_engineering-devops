@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# this is configuring web-01 to have a http response
+# this is configuring web-02 to have a http response
 
 #update packages
 sudo apt-get update
