@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+# server 530617-web-01 login
+
+eval $("ssh-agent")
+
+
+ssh ubuntu@100.26.226.62
+~                        
