@@ -1,7 +1,7 @@
 # Post-Mortem Report
 
 ## Issue Summary
-On June 5, 2024, my primary database experienced an unexpected outage that lasted for approximately 3 hours (from 11:00 AM to 2:00 PM GMT+1). During this time, most user requests resulted in 500 errors, with 100% of requests failing at the peak of the outage. The root cause was identified as a failed database update operation that left the database in an inconsistent state.
+On May 14th, 2024, my primary database experienced an unexpected outage that lasted for approximately 3 hours (from 11:00 AM to 2:00 PM GMT+1). During this time, most user requests resulted in 500 errors, with 100% of requests failing at the peak of the outage. The root cause was identified as a failed database update operation that left the database in an inconsistent state.
 
 ## Timeline (GMT+ 1)
 - **11:00 AM**: Outage began
